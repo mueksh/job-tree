@@ -57,7 +57,7 @@ public class JobController {
     @RequestMapping("/acceptorlist")
     public String acceptorView(Model model) {
     model.addAttribute("acceptorList",acceptorRepository.findAll());
-        return "dashboard";
+        return "acceptorlist";
     }
 
 }
